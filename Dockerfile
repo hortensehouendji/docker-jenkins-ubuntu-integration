@@ -4,7 +4,7 @@ LABEL maintainer="cloudspace"
 
 RUN yum -y update && yum clean all
 
-RUN yun install httpd
+RUN yum install httpd
 
 COPY index.html /var/www/html
 
