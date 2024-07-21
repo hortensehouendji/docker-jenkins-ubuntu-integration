@@ -2,7 +2,9 @@ FROM centos:7
 
 LABEL maintainer="cloudspace" 
 
-RUN yum -y update && yum clean all
+RUN yum -y update 
+
+# && yum clean all
 
 RUN yum -y install httpd
 
